@@ -9,4 +9,5 @@ def floyd(n):
         print "{:^{}}".format(line, width)
     print last_row
 
-floyd(6)
+n = int (raw_input())
+floyd(n)
