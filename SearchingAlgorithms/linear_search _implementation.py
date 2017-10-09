@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
 
 l = map(int, raw_input().split())   #enter space separated entries in a list
 item = input("Enter some numbers: ")                      #item to be searched for
