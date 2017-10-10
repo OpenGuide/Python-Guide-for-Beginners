@@ -1,7 +1,8 @@
 
+
 # first lets get 2 numbers to add
 print "enter 2 number to add"
-
+py
 # getting the first number
 number1 = raw_input("Ok enter the first number ")
 
@@ -23,4 +24,5 @@ sum = number1 + number2
 # and now lets print the numbers
 print "the addition of the 2 numbers is "
 print sum
+
 
