@@ -1,1 +1,23 @@
+# Enter the height of the Floyd's Triangle (the number of layers)
 
+def FloydTriangle(height):
+    if (height > 0):
+        # The count for each iteration each line
+        # and the string for printing each line of the triangle
+        count = 1
+        level = str()
+        
+        # Since 'range(i,j)' goes from i to j-1
+        # 'height' goes from 1 to 'height+2'
+        for i in range(1, height+2):
+            for j in range(1, i):
+                # Create the line separate by spaces
+                # and increase the counting
+                level = level+" "+str(count)
+                count += 1
+            # Print the current level and erase
+            # the next line to be created
+            print(level)
+            level = str()
+    else:
+        print("Height must be a positive number")
