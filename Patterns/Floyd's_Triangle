@@ -1,1 +1,19 @@
+#Floyd's triangle
+#	Floyd's triangle is a right-angled triangular array of natural numbers
+#	used in computer science education. It is defined by filling the rows of 
+#	the triangle with consecutive numbers, starting with a 1 in the top left corner
 
+n = input() 			# Number of rows of Floyd's triangle
+
+number = 1  			# Beginning number for the triangle
+
+# Function range(start,end) creates a list like [start...end-1]
+# Eg. range(1,3) creates list [1,2]
+# Function range(end) creates a list like [0..end-1]
+# Eg. range(3) creates list [0,1,2]
+
+for i in range(1,n+1): 		# Total number of rows to be printed 
+	for j in range(1,i+1):	# Total number of columns in each row
+		print number,   # Add , after print statement to prevent line break
+		number +=1	# Increment the number
+	print			# Add a line break
