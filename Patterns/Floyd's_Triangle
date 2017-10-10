@@ -1,1 +1,14 @@
+# Simple Python program to print Floyd's Triangle
 
+from __future__ import print_function
+
+# Required input from user. 
+num1 = input(" Please enter number of rows of Floyd Triangle you want to print: ")
+num1 = int(num1)
+k = 1
+for i in range(1, num1+1):
+    for j in range(1, i+1):
+        print(k, end=' ')
+        k = k + 1
+    print()
+print()
