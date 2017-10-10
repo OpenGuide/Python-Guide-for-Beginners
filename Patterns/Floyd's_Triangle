@@ -1,1 +1,8 @@
-
+def floyds_triangle(height, seed=1):
+	length = 1
+	for i in range(height):
+		for k in range(length):
+			print seed,
+			seed += 1
+		print
+		length += 1
