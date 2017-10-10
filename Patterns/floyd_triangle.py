@@ -10,7 +10,7 @@ def floyd(n):
         print "{:^{}}".format(line, width)
     print last_row
     
-num1 = input("Enter number of rows: ")
+num1 = input("Please enter number of rows: ")
 
 floyd(int(num1))
 
