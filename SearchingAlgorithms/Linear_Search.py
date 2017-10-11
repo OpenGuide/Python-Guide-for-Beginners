@@ -2,18 +2,22 @@ def linearSearch(item, list):
     found = False
     position = 0
 
-    while position < len(list) and not found:
-        if list[position] == item:
-            found = True
-        position = position + 1
-    return found
+# linear search of an item in the list inputted by the user (python 2.7)
+print("Enter numbers to be stored in a list (space separated")
 
+""" map function in order to store the values of the two space separated integers
+	map (function, iterable..) applies the function on all the items of the iterable """
 
-if __name__ == "__main__":
-    itemList = ["apple", "banana", "cocoa", "durian"]
-    input = input("what item do you want to find?")
-    isItFound = linearSearch(input, itemList)
-    if isItFound:
-        print("your item is in the list!")
-    else:
-        print("your item is not in the list!")
+# linear search of an item in the list inputted by the user
+
+l = map(int, raw_input().split())   #enter space separated entries in a list
+item = input()                      #item to be searched for
+found = 0                           #check to find if th eitem has been found or not
+
+for i in range(len(l)):             #iterating through the array
+	if(l[i] == item):                 #if element found
+		found = 1
+		print('Item found in the list at index position : ' + str(i)) 
+		break
+if(found == 0):                     #if element not found
+	print("Sorry, Item not found in the list ")
