@@ -11,3 +11,6 @@ def for_loop_addition(a,b):
         result += 1
 
     return result
+
+assert for_loop_addition(1,2) ==  1 + 2
+assert for_loop_addition(-1,2) == -1 + 2
