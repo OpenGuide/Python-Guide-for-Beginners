@@ -1,0 +1,18 @@
+# Two simple examples of adding two numbers
+# They are designed to be implemented within a .py file
+# They would need the addition of raw input to run from the 
+# 	command line
+# Also note that the float version does not round, just
+# 	dropping all numbers after a decimal. This is not always
+# 	practical, but good for teaching
+
+
+# python function to add two numbers
+def addTwoNumbers(firstnumber, secondnumber):
+    sum = float(firstnumber) + float(secondnumber)
+    return sum
+    
+# python function to add two Integers
+def addTwoIntegers(firstnumber, secondnumber):
+    sum = int(firstnumber) + int(secondnumber)
+    return sum
