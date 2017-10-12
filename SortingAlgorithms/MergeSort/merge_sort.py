@@ -5,16 +5,17 @@
 # This function merges two lists list1 and list2 in sorted order and returns the merged list.
 def merge(list1,list2):
     merged_list = []
-    while len(list1) != 0 and len(list2) != 0:
+    #while len(list1) != 0 and len(list2) != 0:
+    while list1 and list2:
         # Loop until both the lists are not empty
         if(list1[0] < list2[0]):
             merged_list.append(list1[0])
-            list1.remove(list1[0])
+            list1.pop(0)
         else :
             merged_list.append(list2[0])
-            list2.remove(list2[0])
+            list2.pop(0)    
 
-    if len(list1) == 0 :
+    if not list1:
         merged_list += list2
     else :
          merged_list += list1
