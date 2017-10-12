@@ -24,7 +24,7 @@ def merge(list1,list2):
 
 # This function divides the unsorted list recursively and calls the merge function on two unsorted lists.
 def merge_sort(unsorted_list):
-    if len(unsorted_list) == 0 or len(unsorted_list) == 1 :
+    if len(unsorted_list) <= 1 :
         return unsorted_list
     else:
         mid = int(len(unsorted_list)/2)
