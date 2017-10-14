@@ -37,10 +37,10 @@ def DFS(element, key):
     if "children" in element:
         for child in element["children"]:
             temp = DFS(child, key)
-            if temp != False:
+            if temp:
                 return temp
 
-    return False
+    return None
 
 DFS(data, 1)
 DFS(data, 99)
