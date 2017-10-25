@@ -1,0 +1,1 @@
+Write a Python function that takes an unsorted list and sorts it using merge sort.
