@@ -1,0 +1,6 @@
+def factorial(entered_num):
+    fact_num = 1
+    while entered_num >= 1:
+        fact_num = fact_num * entered_num
+        entered_num = entered_num - 1
+    return fact_num
