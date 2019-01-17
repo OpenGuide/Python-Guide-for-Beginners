@@ -1,3 +1,6 @@
+def linearSearch(item, list):
+    found = False
+    position = 0
 
 # linear search of an item in the list inputted by the user (python 2.7)
 print("Enter numbers to be stored in a list (space separated")
