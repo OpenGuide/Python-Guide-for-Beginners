@@ -1,0 +1,6 @@
+#taking input from user
+n=int(input("Enter the num of lines in square: "))
+for i in range(n): #i is for rows
+    for j in range(n): #j is for columns
+        print("*",end=" ")
+    print()
