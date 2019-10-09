@@ -6,8 +6,8 @@ p = int(input("Enter the larger number."))
 g = int(input("Enter the smaller number."))
 
 while 1:
-    q = p//g
-    r = p % g
+    q = p//g #quotient (integer only, notice the // operation)
+    r = p % g #remainder
     # print(p,",",g,",",q,",",r)
 
     if r == 0:
