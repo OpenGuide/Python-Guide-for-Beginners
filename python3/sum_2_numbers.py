@@ -10,6 +10,6 @@ num2 = float(input("Input second number: "))
 #Now lets find the sum
 sum = num1 + num2
 
-#Concatination
+#Printing the sum
 print("Num1 + Num2 =", sum)
 
