@@ -35,3 +35,5 @@ new_object.add()
 new_object.subtract()
 new_object.multiplication()
 new_object.division()
+
+#second_object = Numbers(3,5)
