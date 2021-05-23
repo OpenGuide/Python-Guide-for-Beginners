@@ -1,5 +1,7 @@
-# Quick Sort
+# 'Quick Sort'
 # Randomize Pivot to avoid worst case, currently pivot is last element
+
+
 def quickSort(A, si, ei):
     if si < ei:
         pi = partition(A, si, ei)
@@ -7,7 +9,7 @@ def quickSort(A, si, ei):
         quickSort(A, pi+1, ei)
 
 
-# Partition
+# 'Partition'
 # Utility function for partitioning the array(used in quick sort)
 def partition(A, si, ei):
     x = A[ei]  # x is pivot, last element
@@ -18,12 +20,12 @@ def partition(A, si, ei):
             A[i], A[j] = A[j], A[i]
     A[i+1], A[ei] = A[ei], A[i+1]      
     return i+1
- 
-    
-#'Alternate Implementation'
+
+
+# Alternate Implementation
 # Warning --> As this function returns the array itself, assign it to some
 # variable while calling. Example--> sorted_arr=quicksort(arr)  
-# Quick sort
+# 'Quick sort'
 
 
 def quicksort(arr):
