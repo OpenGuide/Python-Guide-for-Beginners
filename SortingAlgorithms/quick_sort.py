@@ -18,13 +18,13 @@ def partition(A, si, ei):
         if A[j] <= x:
             i += 1
             A[i], A[j] = A[j], A[i]
-    A[i+1], A[ei] = A[ei], A[i+1]      
+            A[i+1], A[ei] = A[ei], A[i+1]      
     return i+1
 
 
 # Alternate Implementation
 # Warning --> As this function returns the array itself, assign it to some
-# variable while calling. Example--> sorted_arr=quicksort(arr)  
+# Variable while calling. Example--> sorted_arr=quicksort(arr)  
 # 'Quick sort'
 
 
@@ -36,3 +36,7 @@ def quicksort(arr):
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
     return quicksort(left) + middle + quicksort(right)
+
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
