@@ -24,5 +24,12 @@ sum = number1 + number2
 # and now lets print the numbers
 print "the addition of the 2 numbers is "
 print sum
+ 
+  #hacktoberfest
 
+x = input("Enter a number: ")
+y = input("Enter another number: ")
 
+sum = int(x) + int(y)
+
+print("The sum is: ", sum)
