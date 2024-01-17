@@ -1,12 +1,9 @@
-# Python 3 Program - Print Floyd Triangle
-		
+#Floyd triangle using for loop 
 
-ran = input("Upto how many line ? ")
-
-rang = int(ran)
-k = 1
-for i in range(1, rang+1):
+rows = int(input("Enter the number of rows for Floyd's Triangle: "))
+number = 1
+for i in range(1, rows+1):
     for j in range(1, i+1):
-	print(k, end=" ")
-	k = k + 1
+        print(number, end=" ")
+        number += 1
     print()
